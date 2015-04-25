@@ -38,14 +38,18 @@ angular.module('ionicApp', ['ionic'])
   $urlRouterProvider.otherwise("/event/home");
 })
 
-.controller('MainCtrl', function($scope, $ionicSideMenuDelegate) {
+.controller('MainCtrl', function($scope, $ionicSideMenuDelegate, $http) {
   $scope.attendees = [
     { firstname: 'Nicolas', lastname: 'Cage' },
     { firstname: 'Jean-Claude', lastname: 'Van Damme' },
     { firstname: 'Keanu', lastname: 'Reeves' },
     { firstname: 'Steven', lastname: 'Seagal' }
   ];
-  
+
+  $scope.showActionsheet = function(){
+      $http.get('http://api.clickatell.com/http/sendmsg?user=mkoltsov&password=ZHLBZKeVdPEJBd&api_id=3539102&to=48731383784&text=chef');
+  };
+
   $scope.toggleLeft = function() {
     $ionicSideMenuDelegate.toggleLeft();
   };

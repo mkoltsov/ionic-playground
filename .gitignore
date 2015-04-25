@@ -11,3 +11,4 @@ resources/
 scss/
 .DS_Store
 www/.iml
+server/node_modules
