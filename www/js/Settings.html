@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)http://localhost:8100/#/event/check-in -->
+<html ng-app="ionicApp"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}</style>
+
+    <meta charset="UTF-8">
+
+    <title>Settings</title>
+
+    <link rel="stylesheet" href="http://localhost:8100/css/style.css">
+
+<style type="text/css"></style></head>
+
+<body ng-controller="MainCtrl" class="grade-a platform-browser platform-macintel platform-ready"><div id="StayFocusd-infobar" style="display:none;">
+    <img src="chrome-extension://laankejkbhbdhmipfmgcngdelahlfoji/common/img/eye_19x19_red.png">
+    <span id="StayFocusd-infobar-msg"></span>
+    <span id="StayFocusd-infobar-links">
+        <a id="StayFocusd-infobar-never-show">hide forever</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+        <a id="StayFocusd-infobar-hide">hide once</a>
+    </span>
+</div>
+
+
+
+    <meta charset="utf-8">
+    <script>
+      // Injected Ionic Go To URL Live Reload Plugin
+      window.LiveReloadPlugin_IonicGoToUrl = (function() {
+        var GOTO_KEY = "__ionic_goto_url__";
+        var HISTORY_GO_KEY = "__ionic_history_go__";
+        var GoToUrlPlugin = function(window, host) {
+          this.window = window;
+          this.host = host;
+        }
+        GoToUrlPlugin.identifier = "__ionic_goto_url__";
+        GoToUrlPlugin.version = "1.0";
+        GoToUrlPlugin.prototype.reload = function(path) {
+          try {
+            if(path) {
+              if(path.indexOf(GOTO_KEY) === 0) {
+                this.window.document.location = path.replace(GOTO_KEY, "");
+                return true;
+              }
+              if(path.indexOf(HISTORY_GO_KEY) === 0) {
+                this.window.document.history.go( parseInt(path.replace(HISTORY_GO_KEY, ""), 10));
+                return true;
+              }
+            }
+          } catch(e) {
+            console.log(e);
+          }
+          return false;
+        };
+        return GoToUrlPlugin;
+      })();
+    </script>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>Side Menus</title>
+
+    <link href="http://localhost:8100/css/ionic.css" rel="stylesheet">
+    <script src="./Settings_files/ionic.js"></script>
+    <script src="./Settings_files/Chart.js" type="text/javascript"></script>
+    <script src="./Settings_files/angular-chart.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="http://localhost:8100/lib/angular-chart.js/dist/angular-chart.css">
+
+
+
+
+<ion-nav-view class="view-container" nav-view-transition="ios" nav-view-direction="none" nav-swipe=""><ion-side-menus enable-menu-with-back-views="false" class="pane view" nav-view="active" style="opacity: 1; -webkit-transform: translate3d(0%, 0px, 0px);">
+
+    <ion-side-menu-content class="menu-content pane menu-animated" style="-webkit-transform: translate3d(0px, 0px, 0px);">
+        <ion-nav-bar class="bar-positive nav-bar-container" nav-bar-transition="ios" nav-bar-direction="none" nav-swipe="">
+            <ion-nav-back-button class="hide"></ion-nav-back-button>
+
+            <ion-nav-buttons side="left" class="hide"></ion-nav-buttons>
+        <div class="nav-bar-block" nav-bar="active"><ion-header-bar class="bar-positive bar bar-header disable-user-behavior" align-title="center"><button ng-click="$ionicGoBack()" class="button back-button hide buttons  button-clear header-item" style="-webkit-transition-duration: 0ms; transition-duration: 0ms;"><i class="icon ion-ios-arrow-back"></i> 
+            <span class="back-text" style="-webkit-transition-duration: 0ms; transition-duration: 0ms; -webkit-transform: translate3d(0px, 0px, 0px);"><span class="default-title">Back</span><span class="previous-title hide"></span></span></button><div class="buttons buttons-left header-item" style="-webkit-transition-duration: 0ms; transition-duration: 0ms;"><span class="left-buttons">
+                <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+                </button>
+            </span></div><div class="title title-center header-item" style="-webkit-transition-duration: 0ms; transition-duration: 0ms; -webkit-transform: translate3d(0px, 0px, 0px); left: 45px; right: 45px;">Settings</div></ion-header-bar></div><div class="nav-bar-block" nav-bar="cached"><ion-header-bar class="bar-positive bar bar-header disable-user-behavior" align-title="center"><button ng-click="$ionicGoBack()" class="button back-button hide buttons  button-clear header-item" style="-webkit-transition-duration: 0ms; transition-duration: 0ms; opacity: 0;"><i class="icon ion-ios-arrow-back"></i> 
+            <span class="back-text" style="-webkit-transition-duration: 0ms; transition-duration: 0ms; -webkit-transform: translate3d(0px, 0px, 0px); opacity: 0;"><span class="default-title">Back</span><span class="previous-title hide"></span></span></button><div class="buttons buttons-left header-item" style="-webkit-transition-duration: 0ms; transition-duration: 0ms; opacity: 0;"><span class="left-buttons">
+                <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+                </button>
+            </span></div><div class="title title-center header-item" style="left: 48px; right: 48px; -webkit-transition-duration: 0ms; transition-duration: 0ms; -webkit-transform: translate3d(-184.642517089844px, 0px, 0px); opacity: 0;"><i class="icon ion-happy"></i>   GoodMood</div></ion-header-bar></div></ion-nav-bar>
+
+        <ion-nav-view name="menuContent" class="view-container" nav-view-transition="ios" nav-view-direction="none" nav-swipe=""><ion-view view-title="&lt;i class=&quot;icon ion-happy&quot;&gt;&lt;/i&gt;   GoodMood" class="pane" nav-view="cached" style="opacity: 0; -webkit-transform: translate3d(0%, 0px, 0px);">
+    <div class="bar bar-header bar-energized">
+        <h1 class="title">bar-energized</h1>
+    </div>
+    <!--<ion-content class="padding">-->
+        <!--<p>Swipe to the right to reveal the left menu.</p>-->
+        <!--<p>(On desktop click and drag from left to right)</p>-->
+    <!--</ion-content>-->
+    <button ng-hide="hide" class="button button-float" ng-click="login()">
+        <i class="icon ion-happy"></i>
+    </button>
+    <!--<div-->
+            <!--data-ac-chart="'bar'"-->
+            <!--data-ac-data="data"-->
+            <!--data-ac-config="config"-->
+            <!--class="chart">-->
+    <!--</div>-->
+    <div class="chart-container"><canvas id="tables" style="margin-top: 40px; height: 382px; width: 478px;" class="chart chart-line" data="data" labels="labels" ng-hide="hide" width="478" height="382"></canvas></div>
+
+</ion-view><ion-view view-title="Settings" class="pane" nav-view="active" style="opacity: 1; -webkit-transform: translate3d(0%, 0px, 0px);">
+    <ion-content class="scroll-content ionic-scroll  has-header"><div class="scroll" style="-webkit-transform: translate3d(0px, 0px, 0px) scale(1);">
+        <form class="list ng-valid ng-dirty ng-valid-parse" ng-show="showForm">
+            <div class="item item-divider">
+                Your requisites
+            </div>
+            <label class="item item-input">
+                <input type="text" placeholder="First Name" ng-model="firstName" class="ng-valid ng-dirty ng-valid-parse ng-touched">
+            </label>
+            <label class="item item-input">
+                <input type="text" placeholder="Last Name" ng-model="lastName" class="ng-valid ng-dirty ng-valid-parse ng-touched">
+            </label>
+            <div class="item item-divider">
+                Message language
+            </div>
+            <!-- ngRepeat: shirtSize in shirtSizes --><label class="item item-radio ng-valid" ng-repeat="shirtSize in shirtSizes" ng-value="shirtSize.value" ng-model="attendee.shirtSize" value="L"><input type="radio" name="radio-group" ng-value="shirtSize.value" ng-model="attendee.shirtSize" class="ng-pristine ng-untouched ng-valid" value="L"><div class="item-content disable-pointer-events" ng-transclude=""><span class="ng-binding">
+                Polish
+            </span></div><i class="radio-icon disable-pointer-events icon ion-checkmark"></i></label><!-- end ngRepeat: shirtSize in shirtSizes --><label class="item item-radio ng-valid" ng-repeat="shirtSize in shirtSizes" ng-value="shirtSize.value" ng-model="attendee.shirtSize" value="M"><input type="radio" name="radio-group" ng-value="shirtSize.value" ng-model="attendee.shirtSize" class="ng-pristine ng-untouched ng-valid" value="M"><div class="item-content disable-pointer-events" ng-transclude=""><span class="ng-binding">
+                English
+            </span></div><i class="radio-icon disable-pointer-events icon ion-checkmark"></i></label><!-- end ngRepeat: shirtSize in shirtSizes --><label class="item item-radio ng-valid" ng-repeat="shirtSize in shirtSizes" ng-value="shirtSize.value" ng-model="attendee.shirtSize" value="S"><input type="radio" name="radio-group" ng-value="shirtSize.value" ng-model="attendee.shirtSize" class="ng-pristine ng-untouched ng-valid" value="S"><div class="item-content disable-pointer-events" ng-transclude=""><span class="ng-binding">
+                Deutsch
+            </span></div><i class="radio-icon disable-pointer-events icon ion-checkmark"></i></label><!-- end ngRepeat: shirtSize in shirtSizes -->
+            <div class="item item-divider">
+                Administrative
+            </div>
+            <div class="item item-toggle toggle-large ng-valid" ng-model="attendee.vegetarian"><div ng-transclude=""><span>
+                Debug mode
+            </span></div><label class="toggle disable-user-behavior"><input type="checkbox" ng-model="attendee.vegetarian" class="ng-pristine ng-untouched ng-valid"><div class="track"><div class="handle"></div></div></label></div>
+            <!--<div class="padding">-->
+                <!--<button class="button button-block" ng-click="submit()">Checkin</button>-->
+            <!--</div>-->
+        </form>
+
+        <!--<div ng-hide="showForm">-->
+            <!--<pre ng-bind="attendee | json"></pre>-->
+            <!--<a href="#/event/attendees">View attendees</a>-->
+        <!--</div>-->
+    </div><div class="scroll-bar scroll-bar-v"><div class="scroll-bar-indicator scroll-bar-fade-out" style="-webkit-transform: translate3d(0px, 0px, 0px) scaleY(1); height: 0px;"></div></div></ion-content>
+</ion-view></ion-nav-view>
+    </ion-side-menu-content>
+
+    <ion-side-menu side="left" is-enabled="true" width="275" class="menu menu-left" style="width: 275px; z-index: 0;">
+        <ion-header-bar class="bar-assertive bar bar-header disable-user-behavior">
+            <h1 class="title">       <i class="icon ion-happy-outline"></i> Menu</h1>
+        </ion-header-bar>
+        <ion-content class="scroll-content ionic-scroll  has-header"><div class="scroll" style="-webkit-transform: translate3d(0px, 0px, 0px) scale(1);">
+            <ul class="list">
+                <!-- Note each link has the 'menu-close' attribute so the menu auto closes when clicking on one of these links -->
+                <a href="http://localhost:8100/#/event/home" class="item" menu-close="">Main</a>
+                <a href="http://localhost:8100/#/event/attendees" class="item" menu-close="">Thump</a>
+                <a href="./Settings_files/Settings.html" class="item" menu-close="">Settings</a>
+
+
+            </ul>
+        </div><div class="scroll-bar scroll-bar-v"><div class="scroll-bar-indicator scroll-bar-fade-out" style="-webkit-transform: translate3d(0px, 0px, 0px) scaleY(1); height: 0px;"></div></div></ion-content>
+    </ion-side-menu>
+
+</ion-side-menus></ion-nav-view>
+
+
+
+
+<script src="./Settings_files/index.js"></script>
+
+
+<script>//<![CDATA[
+document.write('<script src="//' + (location.hostname || 'localhost') + ':35729/livereload.js?snipver=1"><\/script>')
+//]]></script><script src="./Settings_files/livereload.js"></script>
+
+
+<div class="click-block click-block-hide"></div><div class="modal-backdrop hide"><div class="modal-backdrop-bg"></div><div class="modal-wrapper" ng-transclude=""><ion-modal-view class="modal slide-in-up ng-leave ng-leave-active">
+  <ion-header-bar class="bar bar-header disable-user-behavior">
+    <h1 class="title" style="left: 58px; right: 58px;">Login</h1>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="closeLogin()">Close</button>
+    </div>
+  </ion-header-bar>
+  <ion-content class="scroll-content ionic-scroll  has-header"><div class="scroll" style="-webkit-transform: translate3d(0px, 0px, 0px) scale(1);">
+    <form ng-submit="doLogin()" class="ng-pristine ng-valid">
+      <div class="list">
+        <label class="item item-input">
+          <span class="input-label">Username</span>
+          <input type="text" ng-model="loginData.username" class="ng-pristine ng-untouched ng-valid">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Password</span>
+          <input type="password" ng-model="loginData.password" class="ng-pristine ng-untouched ng-valid">
+        </label>
+        <label class="item">
+          <button class="button button-block button-positive" type="submit">Log in</button>
+        </label>
+      </div>
+    </form>
+  </div><div class="scroll-bar scroll-bar-v"><div class="scroll-bar-indicator scroll-bar-fade-out" style="-webkit-transform: translate3d(0px, 0px, 0px) scaleY(1); height: 0px;"></div></div></ion-content>
+</ion-modal-view></div></div></body></html>

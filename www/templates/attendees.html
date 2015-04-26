@@ -1,18 +1,18 @@
-<ion-view view-title="Event Attendees">
+<ion-view view-title="Thump">
     <ion-content>
         <div class="list">
-            <ion-toggle ng-repeat="attendee in attendees | orderBy:'firstname' | orderBy:'lastname'"
+            <ion-toggle ng-repeat="attendee in parameters | orderBy:'lastname'"
                         ng-model="attendee.arrived"
-                        ng-change="arrivedChange(attendee)">
-                {{ attendee.firstname }}
+                        ng-change="arrivedChange()">
                 {{ attendee.lastname }}
+                <!--{{ attendee.lastname }}-->
             </ion-toggle>
-            <div class="item item-divider">
-                Activity
-            </div>
-            <div class="item" ng-repeat="msg in activity">
-                {{ msg }}
-            </div>
+            <!--<div class="item item-divider">-->
+                <!--Activity-->
+            <!--</div>-->
+            <!--<div class="item" ng-repeat="msg in activity">-->
+                <!--{{ msg }}-->
+            <!--</div>-->
         </div>
     </ion-content>
 </ion-view>

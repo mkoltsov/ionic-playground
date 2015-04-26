@@ -1780,6 +1780,10 @@ window.ionic.version = '1.0.0-rc.4-nightly-1257';
     },
     triggered: false,
     handler: function dragGesture(ev, inst) {
+      if (ev.direction != 'up' && ev.direction != 'down') {
+        ev.srcEvent.preventDefault();
+      }
+
       if (ev.srcEvent.type == 'touchstart' || ev.srcEvent.type == 'touchend') {
         this.preventedFirstMove = false;
 

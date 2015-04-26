@@ -1,17 +1,17 @@
-<ion-view view-title="Event Check-in">
+<ion-view view-title="Settings">
     <ion-content>
         <form class="list" ng-show="showForm">
             <div class="item item-divider">
-                Attendee Info
+                Your requisites
             </div>
             <label class="item item-input">
-                <input type="text" placeholder="First Name" ng-model="attendee.firstname">
+                <input type="text" placeholder="First Name" ng-model="firstName">
             </label>
             <label class="item item-input">
-                <input type="text" placeholder="Last Name" ng-model="attendee.lastname">
+                <input type="text" placeholder="Last Name" ng-model="lastName">
             </label>
             <div class="item item-divider">
-                Shirt Size
+                Message language
             </div>
             <ion-radio ng-repeat="shirtSize in shirtSizes"
                        ng-value="shirtSize.value"
@@ -19,19 +19,19 @@
                 {{ shirtSize.text }}
             </ion-radio>
             <div class="item item-divider">
-                Lunch
+                Administrative
             </div>
             <ion-toggle ng-model="attendee.vegetarian">
-                Vegetarian
+                Debug mode
             </ion-toggle>
-            <div class="padding">
-                <button class="button button-block" ng-click="submit()">Checkin</button>
-            </div>
+            <!--<div class="padding">-->
+                <!--<button class="button button-block" ng-click="submit()">Checkin</button>-->
+            <!--</div>-->
         </form>
 
-        <div ng-hide="showForm">
-            <pre ng-bind="attendee | json"></pre>
-            <a href="#/event/attendees">View attendees</a>
-        </div>
+        <!--<div ng-hide="showForm">-->
+            <!--<pre ng-bind="attendee | json"></pre>-->
+            <!--<a href="#/event/attendees">View attendees</a>-->
+        <!--</div>-->
     </ion-content>
 </ion-view>

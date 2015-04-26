@@ -1,9 +1,61 @@
-<ion-view view-title="Welcome">
-    <ion-content class="padding">
-        <p>Swipe to the right to reveal the left menu.</p>
-        <p>(On desktop click and drag from left to right)</p>
-    </ion-content>
-    <button class="button button-float" ng-click="showActionsheet()">
-        <i class="icon ion-happy"></i>
-    </button>
+<ion-view view-title='<i class="icon ion-happy"></i>   GoodMood'>
+    <div class="bar bar-header bar-energized">
+        <h1 class="title">bar-energized</h1>
+    </div>
+    <!--<ion-content class="padding">-->
+    <!--<p>Swipe to the right to reveal the left menu.</p>-->
+    <!--<p>(On desktop click and drag from left to right)</p>-->
+    <!--</ion-content>-->
+
+    <!--<div-->
+    <!--data-ac-chart="'bar'"-->
+    <!--data-ac-data="data"-->
+    <!--data-ac-config="config"-->
+    <!--class="chart">-->
+    <!--</div>-->
+
+        <canvas id="tables" style="margin-top: 40px;height: 350px" class="chart chart-line" data="data"
+                labels="labels" ng-hide="hide"></canvas>
+    <div ng-hide="hide">
+        <div class="row" ng-repeat="parameter in parameters|filter: { arrived: true }">
+            <!--<div class="card" style="width: 450px">-->
+            <div class="card" style="width: 450px">
+                <div class="item item-text-wrap">
+                    <div class="row">
+                        <div><span ng-class="coloredText">{{parameter.lastname}}</span></div>
+                        <!--<div><span style="font-size: 10px;color: darkgreen">{{parameter.arrived}}</span></div>-->
+                    </div>
+                    <div class="row">
+                        <div class="col-offset-10 col-20"><i class="icon ion-ios-pulse-strong medium-font"></i> <span
+                                class="medium-font">{{parameter.pulse}}</span></div>
+                        <div class="col-20"><i class="icon ion-android-sunny medium-font"></i> <span
+                                class="medium-font">{{genLightness}}</span></div>
+                        <div class="col-20"><i class="icon ion-ios-analytics medium-font"></i> <span
+                                class="medium-font">{{parameter.overall}}</span></div>
+                        <div class="col-20"><i class="icon ion-heart medium-font"></i> <span class="medium-font">{{genHeartRate}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--<div class="item item-divider">-->
+            <!--{{parameter.lastname}}-->
+            <!--</div>-->
+            <!--<div class="item item-text-wrap">-->
+
+            <!--</div>-->
+            <!--<div class="item item-divider">-->
+            <!--I'm a Footer in a Card!-->
+            <!--</div>-->
+            <!--</div>-->
+
+            <!--</div>-->
+
+        </div>
+        <button class="button button-float" ng-click="login()">
+            <i class="icon ion-happy"></i>
+        </button>
+    </div>
 </ion-view>
+<!--<div class="bar bar-footer bar-balanced">-->
+<!--<div class="title">Footer</div>-->
+<!--</div>-->
